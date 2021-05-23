@@ -1,0 +1,266 @@
+/*Базовые стили*/
+:root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #60606e;
+}
+/*Стили для базовых блоков*/
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: inherit;
+    position: relative;
+}
+.heading::after {
+    content: '';
+    display: block;
+    background-image: url(../img/decoration-element-1.png);
+    width: 68px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    line-height: 2.14;
+    color: #60606e;
+    margin: 0;
+}
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+/*Стили header*/
+.header {
+    background-image: url(../img/about-header-bg.png);
+    background-size: cover;
+    padding-top: 2.687em;
+}
+.header__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+.header__logo:hover {
+    color: inherit;
+}
+.header__menu {
+    border: none;
+    background: transparent;
+}
+.header__navbar {
+    margin-bottom: 13.187em;
+}
+.header__hero-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 0.777em;
+}
+.header__hero-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 11.875em;
+}
+/*Стили about-us*/
+.about-us {
+    padding-top: 9.375rem;
+    margin-bottom: 10.187rem;
+}
+.about-us__heading {
+    margin-bottom: 0.466em;
+}
+.about-us__add-heading {
+    font-weight: 800;
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 1em;
+}
+/*Стили для some-benefits*/
+.some-benefits {
+    margin-bottom: 5.937em;
+}
+.some-benefits__add-heading {
+    margin-bottom: 7.357em;
+}
+.some-benefits__benefit {
+    padding-bottom: 3.437em;
+}
+.some-benefits__benefit-heading {
+    margin-bottom: 1.25em;
+}
+.some-benefits__benefit-heading-icon {
+    background-color: #7beec7;
+    width: 40px;
+    height: 40px;
+}
+.some-benefits__icon {
+    font-size: 1.5rem;
+}
+.some-benefits__benefit-heading-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 0 1.428em;
+}
+/*Стили для team*/
+.team {
+    margin-bottom: 9.375rem;
+}
+.team__add-heading {
+    margin-bottom: 7.357em;
+}
+.team__photo {
+    margin-bottom: 1.875rem;
+}
+.team__read-more {
+    background-image: url(../img/readmore-gbg.png);
+    background-size: cover;
+    font-size: 1.125rem;
+    font-style: italic;
+    padding: 2.777em 1.666em;
+}
+.team__read-more-text {
+    margin: 0;
+}
+.team__read-more-button {
+    background-color: #7beec7;
+    padding: 1.1em 2.857em;
+}
+/*Стили секции partners*/
+.partners {
+    margin-bottom: 9.375rem;
+}
+.partners__photo {
+    margin-bottom: 1.75em;
+}
+.partners__data-text {
+    margin-bottom: 1.625em;
+}
+.partners__name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #7beec7;
+    line-height: 2.142;
+    padding: 0 0.785em;
+    display: block;
+    margin-bottom: 2.14em;
+}
+.partners__logo {
+    border: 0.5px solid #cdcdcd;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners__logo-img {
+    height: 100px;
+    object-fit: scale-down;
+}
+.carousel-indicators {
+position: static;
+}
+.carousel-button {
+    width: 16px !important;
+}
+.carousel-button.active {
+ width: 30px !important;
+ background-color: #7beec7 !important;
+}
+/*стили для feedback-form*/
+.feedback-form {
+    background-color: #7beec7;
+    padding: 3.125em 0;
+}
+.feedback-form__heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0 0 1em ;
+}
+.feedback-form__button {
+    background-color: white;
+    color: #7beec7;
+    padding: 1.1em 2.285em;
+    margin-bottom: 1rem;
+}
+.feedback-form__post {
+    background-color: white;
+    padding: 1.25em 1.625em;
+}
+.feedback-form__post-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.feedback-form__post-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.feedback-form__post-button {
+    background-color: #7beec7;
+    padding: 1.1em 3.571em;
+}
+.feedback-form__email-form::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.857rem;
+    color: #cdcdcd;
+}
+.feedback-form__email-form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.857rem;
+}
+/*Стили для footer*/
+.footer {
+    padding: 3.125rem 0;
+}
+.footer__navbar {
+    list-style: none;
+    margin: none;
+    padding: 0;
+}
+.footer__navbar-item:not(:last-child)::after {
+    content:"-";
+    margin: 0 1.125em;
+}
+.footer__navbar-item-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: inherit;
+}
+.footer__copyright {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 2.142em;
+}
+.footer__social-icon {
+    margin-left: 1.062em;
+    font-size: 1.2rem;
+}

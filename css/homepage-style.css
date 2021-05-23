@@ -1,0 +1,261 @@
+/*Базовые стили*/
+:root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #60606e;
+}
+/*Стили для базовых блоков*/
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: inherit;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+}
+.heading::after {
+    content: '';
+    display: block;
+    background-image: url(../img/decoration-element-1.png);
+    width: 68px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+.heading__text {
+    font-size: 0.875rem;
+    line-height: 1.714;
+    margin-bottom: 7.142em;
+}
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    line-height: 2.14;
+    color: #60606e;
+    margin: 0;
+}
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+/*Стили header*/
+.header {
+    background-image: url(../img/homepage-header-bg.png);
+    background-size: cover;
+    padding-top: 2.687em;
+    margin-bottom: 15.625rem;
+}
+.header__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+.header__logo:hover {
+    color: inherit;
+}
+.header__menu {
+    border: none;
+    background: transparent;
+}
+.header__navbar {
+    margin-bottom: 13.187em;
+}
+.header__hero-logo {
+    margin-bottom: 1.875em;
+}
+.header__hero-logo-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 7.812em;
+}
+.header__hero-text {
+    font-size: 1rem;
+    line-height: 1.875;
+    margin-bottom: 1.687em;
+}
+.header__hero-decoration-image {
+    position: absolute;
+}
+.header__hero-button {
+    background-color: #7beec7;
+    padding: 1.1em 2.857em;
+    position: absolute;
+    right: 0;
+}
+/*стили для services*/
+.services {
+    margin-bottom: 9.375rem;
+}
+.services__heading {
+    margin-bottom: 1em;
+}
+.services__heading-text {
+    line-height: 1.714;
+    margin-bottom: 7.142em;
+}
+.services__category-icon {
+    font-size: 1.5rem;
+}
+.services__category-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 2.666;
+    text-transform: uppercase;
+}
+.services__category-list {
+    list-style: none;
+    padding: 0;
+}
+.services__category-list-item {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+/*Стили для portfolio*/
+.portfolio {
+    margin-bottom: 7.5rem;
+}
+.portfolio__navbar-heading{
+    margin-bottom: 1.666em;
+}
+.portfolio__navbar-heading::after {
+    display: none;
+}
+.portfolio__navbar {
+    list-style: none;
+    padding: 0;
+}
+.portfolio__navbar-item {
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2.142em;
+}
+.portfolio__navbar-item-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1.428em;
+}
+.portfolio__navbar-item-link:hover {
+    background-color: #7beec7;
+    color: white;
+    padding: 0 1.428em;
+    margin-left: 0
+}
+.portfolio>.portfolio__gallery{
+    display: none;
+    order: 1;
+}
+.portfolio>.portfolio__gallery>div:target {
+    display: block;
+}
+.portfolio__gallery-image {
+    object-fit: contain;
+}
+.all {
+    columns: 3;
+    column-gap: 1.875em;
+}
+.portfolio__gallery-image {
+    margin-bottom: 1.875em;
+}
+.tabs__content {
+    display: none;
+}
+.tabs__content.active {
+    display: block;
+}
+/*стили для feedback-form*/
+.feedback-form {
+    background-color: #7beec7;
+    padding: 3.125em 0;
+}
+.feedback-form__heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0 0 1em ;
+}
+.feedback-form__button {
+    background-color: white;
+    color: #7beec7;
+    padding: 1.1em 2.285em;
+    margin-bottom: 1rem;
+}
+.feedback-form__post {
+    background-color: white;
+    padding: 1.25em 1.625em;
+}
+.feedback-form__post-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.feedback-form__post-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.feedback-form__post-button {
+    background-color: #7beec7;
+    padding: 1.1em 3.571em;
+}
+.feedback-form__email-form::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.857rem;
+    color: #cdcdcd;
+}
+.feedback-form__email-form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.857rem;
+}
+/*Стили для footer*/
+.footer {
+    padding: 3.125rem 0;
+}
+.footer__navbar {
+    list-style: none;
+    margin: none;
+    padding: 0;
+}
+.footer__navbar-item:not(:last-child)::after {
+    content:"-";
+    margin: 0 1.125em;
+}
+.footer__navbar-item-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: inherit;
+}
+.footer__copyright {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 2.142em;
+}
+.footer__social-icon {
+    margin-left: 1.062em;
+    font-size: 1.2rem;
+}
